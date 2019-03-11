@@ -57,6 +57,10 @@ llvm_mapping:
       url: http://releases.llvm.org/6.0.0/clang+llvm-6.0.0-x86_64-linux-gnu-Fedora27.tar.xz
       path: clang+llvm-6.0.0-x86_64-linux-gnu-Fedora27
 
+  freebsd:
+    6.0.0:
+      url: http://releases.llvm.org/6.0.0/clang+llvm-6.0.0-amd64-unknown-freebsd-10.tar.xz
+      path: clang+llvm-6.0.0-amd64-unknown-freebsd-10
 
 llvm_url: "{{ llvm_mapping[platform][llvm_version].url }}"
 llvm_path: "{{ llvm_mapping[platform][llvm_version].path }}"
